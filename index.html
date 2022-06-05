@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurent Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<!-- Menu -->
+	<div id="menuDiv">
+		<h1 style="text-align: center; font-family: cursive;">Restaurent Menu</h1>
+	</div>
+	<div>
+    <!-- Dropdown box -->
+		<select id="myDropdown" onchange="filterSelection();">
+      <option value="hide">-- Menu --</option>
+    	<option value="A">All</option>
+    	<option value="B">Breakfast</option>
+    	<option value="C">Lunch</option>
+    	<option value="D">Dinner</option>
+    	<option value="E">Desserts</option>
+		</select>
+	</div>
+	<div class="menuContainer">
+    <!--Menu Items-->
+		<div id ="breakfast">
+			<img src="img/Boiled-Egg-Sandwich.jpg" alt="Boiled Egg Sandwich Image" class="dishImage" />
+			<h4 class="dishTitle">Boiled Egg Sandwich</h4>
+      <p class="dishPrice">Price: ₹149</p>
+		</div> 
+  		<div id ="lunch">
+  			<img src="img/veg-pulao.jpg" alt="Veg Pulao" class="dishImage" />
+  			<h4 class="dishTitle">Veg Pulao</h4>
+        <p class="dishPrice">Price: ₹269</p>
+  		</div>
+  		<div id="dinner">
+  			<img src="img/khichdi.jpg" alt="khichdi" class="dishImage">
+  			<h4 class="dishTitle">Khichdi</h4>
+        <p class="dishPrice">Price: ₹199</p>
+  		</div>
+  		<div id="desserts">
+  			<img src="img/fudge-ice-cream.jpg" alt="fudge ice cream" class="dishImage">
+  			<h4 class="dishTitle">Fudge Ice Cream</h4>
+        <p class="dishPrice">Price: ₹69</p>
+  		</div>
+  		
+	</div>
+</body>
+</html>
